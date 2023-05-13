@@ -11,38 +11,25 @@ abort() {
 	exit 1
 }
 
+# Xcode developer tools are needed
+xcode-select -—install
+
 # Install Homebrew to manage all other application installs (if not installed)
-if [[ -z "$(which brew)" ]]; then
-	echo "Let's install Homebrew..."
-	sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-else
-	echo "Brew is already installed"
-fi
+echo "Let's install Homebrew..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 
 # Install Git to clone all the necesary repos
-if [[ -z "$(which git)" ]]; then
-	echo "Installing Git"
-	brew install git
-else
-	echo "Git is already installed"
-fi
-#
+echo "Installing Git"
+brew install git
 # Install Github CLI to clone all the necesary repos
-if [[ -z "$(which gh)" ]]; then
-	echo "Installing Git"
-	brew install gh
-else
-	echo "Github CLI is already installed"
-fi
+echo "Installing Git"
+brew install gh
 
 ## Brew install zsh and zsh-completions
-if [[ -z "$(which zsh)" ]]; then
-	echo "Installing zsh and zshrc"
-	brew install zsh
-	brew install zsh-completions
-else
-	echo "ZSH installed and runing"
-fi
+echo "Installing zsh and zshrc"
+brew install zsh
+brew install zsh-completions
 
 # And Oh MY ZSH
 if [[ ! -d "~/ohmyzsh" ]]; then
@@ -53,29 +40,20 @@ else
 fi
 
 # Install nvm for managing diffrent Node versions
-if [[ ! -d "~/.nvm" ]]; then
-	echo "Install NVM"
-	mkdir ~/.nvm
-	brew install nvm
-else
-	echo "NVM is already installed"
-fi
+echo "Install NVM"
+mkdir ~/.nvm
+brew install nvm
+
 
 ## Installing warp teminal (will require Github login later on)
-if [[ -z "$(which warp)" ]]; then
-	echo "Installing warp teminal"
-	brew install --cask warp
-	sh -c curl -s -N 'https://warp-themes.com/d/FfdIm6Y03EMqB1ai5V1r' | bash
-else
-	echo "Warp terminal is installed"
-fi
+echo "Installing warp teminal"
+brew install --cask warp
+sh -c curl -s -N 'https://warp-themes.com/d/FfdIm6Y03EMqB1ai5V1r' | bash
+
 
 ## Installing Neovim (THE editor)
-if [[ -z "$(which nvim)" ]]; then
-	echo "Installing Neovim"
-	brew install nvim
-else
-	echo "Neovim already exists"
-fi
+echo "Installing Neovim"
+brew install nvim
+
 
 echo "Neovim configuration is under a dotfile config >>>"
