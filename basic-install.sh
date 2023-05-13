@@ -12,8 +12,10 @@ abort() {
 }
 
 # Xcode developer tools are needed
-xcode-select -—install
+xcode-select -—instal
 
+
+unset POSIXLY_CORRECT
 # Install Homebrew to manage all other application installs (if not installed)
 echo "Let's install Homebrew..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
