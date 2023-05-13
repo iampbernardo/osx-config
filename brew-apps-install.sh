@@ -25,3 +25,6 @@ brew install --cask arc
 
 # cleanmymac -- Keep the machine optimized and things under control
 brew install --cask cleanmymac
+
+# spotify -- Keep the music going
+brew install --cask spotify
