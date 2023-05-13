@@ -19,6 +19,10 @@ The Curl option is probably faster when starting from scratch (the repo can be u
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iampbernardo/osx-config/main/terminal-based-apps.sh)"
 ```
+## Brew apps installation
+```console
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iampbernardo/osx-config/main/brew-apps-install.sh)"
+```
 
 ## Manual installs
 For non-brew apps, there is a script that installs all the apps from the Apple store.
