@@ -1,10 +1,13 @@
 #!/bin/sh
 # Here we install all the non-terminal based apps we can install from brew
+brew update
+brew upgrade
 
 # 1password for password management
 if [[ -z "$(which 1password)" ]]; then
 	echo "Installing 1password"
 	brew install --cask 1password
+	brew install --cask 1password-cli
 else
 	echo "1password is already installed"
 fi
