@@ -2,8 +2,8 @@
 brew update
 brew upgrade
 
-# htop instead of of Activity monitor
-brew install htop
+brew install htop #htop instead of activity monitor
 brew install wget
 brew install fd
-brew install node
+brew install node    #Node JS installed via brew
+brew install lazygit #This is the Git cli used in Neovim
