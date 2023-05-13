@@ -27,6 +27,11 @@ The Curl option is probably faster when starting from scratch (the repo can be u
 ## Manual installs
 For non-brew apps, there is a script that installs all the apps from the Apple store.
 
+## User manual actions
+1. Open Warp terminal and setup select the custom theme
+2. Open the browser and login into my accounts to make auth easier in apps later
+3. Open Raycast, login and disable Spotlight
+
 
 ## Pending
 
