@@ -10,6 +10,15 @@ Grab and execute the basic installation
 ```console
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iampbernardo/osx-config/main/basic-install.sh)"
 ```
+## Terminal based app
+At this point there are two options:
+- Cloning the repo and executing the scipts
+- Keep going via curl and raw.github
+
+The Curl option is probably faster when starting from scratch (the repo can be updated later if you add changes)
+```console
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iampbernardo/osx-config/main/terminal-based-apps.sh)"
+```
 
 ## Manual installs
 For non-brew apps, there is a script that installs all the apps from the Apple store.
