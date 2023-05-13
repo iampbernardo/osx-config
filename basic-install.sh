@@ -50,7 +50,7 @@ brew install nvm
 ## Installing warp teminal (will require Github login later on)
 echo "Installing warp teminal"
 brew install --cask warp
-sh -c curl -s -N 'https://warp-themes.com/d/FfdIm6Y03EMqB1ai5V1r' | bash
+curl -s -N 'https://warp-themes.com/d/FfdIm6Y03EMqB1ai5V1r' | bash
 
 
 ## Installing Neovim (THE editor)
