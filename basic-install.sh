@@ -14,7 +14,7 @@ abort() {
 # Xcode developer tools are needed
 xcode-select -—instal
 
-
+# Brew fails if POSIXLY mode is enabled
 unset POSIXLY_CORRECT
 # Install Homebrew to manage all other application installs (if not installed)
 echo "Let's install Homebrew..."
