@@ -31,3 +31,6 @@ brew install --cask cleanmymac
 
 # spotify -- Keep the music going
 brew install --cask spotify
+
+# calibre to manage kindle and it's library
+brew install --cask calibre
