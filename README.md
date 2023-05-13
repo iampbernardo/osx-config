@@ -29,5 +29,7 @@ For non-brew apps, there is a script that installs all the apps from the Apple s
 
 
 ## Pending
+
 [ ] Every single install includes error handling if the app already exists
+
 [ ] Automate MacOS configurations
